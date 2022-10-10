@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\justi\\Source\\Repos\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj": {}
+    "C:\\Users\\justi\\Desktop\\test\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\justi\\Source\\Repos\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj": {
+    "C:\\Users\\justi\\Desktop\\test\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justi\\Source\\Repos\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\Desktop\\test\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj",
         "projectName": "GhostReconBreakpointMissionGenerator",
-        "projectPath": "C:\\Users\\justi\\Source\\Repos\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj",
+        "projectPath": "C:\\Users\\justi\\Desktop\\test\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj",
         "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justi\\Source\\Repos\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\obj\\",
+        "outputPath": "C:\\Users\\justi\\Desktop\\test\\GhostReconBreakpointMissionGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
