@@ -10,7 +10,7 @@ string[] HARUHIITOArray = { "THE GUN RUNNER", "CROSS THE LINE", "WHISTLEBLOWER",
 string[] MADSSCHULZArray = { "BREAK THE RULES", "PROOF OF LIFE", "A DEADLY TRAP", "SCIENCE WITHOUT CONSCIENCE", "PATIENT ZERO", "REDEEMING REMEDY" };
 string[] OPERATIONAMBERSKYArray = { "HAZARDOUS MATERIAL", "THE ROOT OF ALL EVIL", "DESPERATE MEASURES", "DRASTIC REMEDY", "CHASING AN APOCALYPSE", "THE DEVIL WE WANT",
                                     "FIGHT FIRE WITH FIRE", "BREAKING THE WHEEL", "SLUMBERING BEAST", "HUMAN TRIAL(S)" };
-string[] RESISTANCEArray = { "JOIN THE RESISTANCE", "COUNTERATTACK", "FRIENDS IN NEED", "HIT THE ROAD", "HEARTS AND SOULS", "LICENSE EXPIRED", "BRAIN DRAIN", "A SAFER PLACE",
+string[] RESISTANCEArray = { "COUNTERATTACK", "FRIENDS IN NEED", "HIT THE ROAD", "HEARTS AND SOULS", "LICENSE EXPIRED", "BRAIN DRAIN", "A SAFER PLACE",
                              "SILENT RECOVERY", "TRAFFIC CONTROL" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
@@ -68,7 +68,7 @@ while (Convert.ToInt32(input) != 0)
     }
     else if (type == 8)
     {
-        int RESISTANCE = random.Next(0, 9);
+        int RESISTANCE = random.Next(0, 8);
         Console.WriteLine(RESISTANCEArray[RESISTANCE]);
     }
     else if (type == 9)
