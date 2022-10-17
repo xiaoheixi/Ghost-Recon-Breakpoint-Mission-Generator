@@ -4,6 +4,13 @@ string[] typeArray = { "EPISODE 1", "EPISODE 2", "EPISODE 3", "HARUHI ITO", "A L
 string[] EPISODE1Array = { "OPERATION GREENSTONE", "LTC. COLE D. WALKER", "JACE SKELL", "MAURICE FOX", "AUROA ARCHIPELAGO", "FLYCATCHER", "ROSEBUD", "PAULA MADERA",
                            "CHRISTINA CROMWELL", "SILVERBACK", "CARL CHISUM", "AYANA PURI" };
 string[] OPERATIONGREENSTONEArray = { "NO WAY OUT", "EAGLES DOWN" };
+string[] LTCCOLEDWALKERArray = { "CHECKMATE", "INTO THE WOLF'S DEN", "BROTHER VS BROTHER" };
+string[] JACESKELLArray = { "BACK TO THE BASICS", "SKELL ON THE MOVE", "THE ENEMY OF MY ENEMY" };
+string[] AUROAARCHIPELAGOArray = { "THE PRICE OF TRUST", "GHOSTS OF THE PAST", "CRITICAL MASS", "GET THE SCOOP", "ONE MAN'S HELL", "COVER UP", "FOR HONOR", "SONG FOR A REVOLUTION",
+                                   "DON'T KILL THE MESSENGER", "PIRATE RADIO", "ICARUS BLUES", "WRITTEN ON STONE", "A SANE NEW WORLD", "TOVARISH", "HORN OF PLENTY", "NATURAL MEDICINE",
+                                   "TWISTED NERVES", "KEEP IT ON ICE", "BRING YOUR OWN", "A NEW PERSPECTIVE", "GONE FISHING", "ECO-WARRIOR", "MIND OVER MATTER", "HOME INVASION",
+                                   "FIREPOWER", "TREASURE ISLAND", "DEATH ON PRIME TIME", "WEAPONS OF REVENGE", "A SOUL IN REST", "BAD HARVEST", "THE MEETING", "The Titan Program",
+                                   "SACRED LAND", "THE SIREN'S CALL" };
 string[] EPISODE2Array = { "OPERATION CHECKMATE", "THE STRATEGIST", "SAM FISHER", "STEPHANIE BURGESS", "HOLLIE MACKENZIE", "KAREL SEKULIC", "GENERAL PAXTON", "WILLAM VAN DYKE" };
 string[] EPISODE3Array = { "MANTICORE", "BASILISK", "ORACLE", "HARPY", "SPHINX", "CYCLOPS", "ATLAS", "GRIFFIN", "MEDUSA", "KRAKEN" };
 string[] HARUHIITOArray = { "THE GUN RUNNER", "CROSS THE LINE", "WHISTLEBLOWER", "RALLYING CRY", "HOSTILE TAKEOVER", "LOSS OF INNOCENCE" };
@@ -29,6 +36,21 @@ while (Convert.ToInt32(input) != 0)
         {
             int OPERATIONGREENSTONE = random.Next(0, 1);
             Console.WriteLine(OPERATIONGREENSTONEArray[OPERATIONGREENSTONE]);
+        }
+        if(EPISODE1 == 1)
+        {
+            int LTCCOLEDWALKER = random.Next(0, 2);
+            Console.WriteLine(LTCCOLEDWALKERArray[LTCCOLEDWALKER]);
+        }
+        if(EPISODE1 == 2)
+        {
+            int JACESKELL = random.Next(0, 2);
+            Console.WriteLine(JACESKELLArray[JACESKELL]);
+        }
+        if(EPISODE1 == 4)
+        {
+            int AUROAARCHIPELAGO = random.Next(0, 32);
+            Console.WriteLine(AUROAARCHIPELAGOArray[AUROAARCHIPELAGO]);
         }
     }
     else if (type == 1)
