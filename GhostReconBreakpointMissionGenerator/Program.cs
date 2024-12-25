@@ -29,6 +29,7 @@ string[] SECTOR03Array = { "PROTOTYPE WORKSHOP", "LAVADUCT", "LAVA SHIELD", "SCA
 string[] SECTOR01Array = { "CHEMICAL PIPELINE", "CHEMICAL REFINERY", "GOLEM ISLAND HELIPORT", "GOLEM ISLAND SATELLITE DISH", "ANCIENT HARBOR" };
 string[] SECTOR02Array = { "CAMP SALAMANDER", "CAMP PHOENIX", "FORGOTTEN SANCTUARY", "GOLEM ISLAND TESTING ZONE", "MISSILE SITE RUINS", "QUANTUM COMPUTER CENTER" };
 string[] CAPENORTHArray = { "A.I. EXPERIMENTAL CENTER", "DRIFTWOOD ISLETS TESTING ZONE", "CAMPUS RELAY STATION", "CAMPUS DATA FARM", "UNDERWATER CABLE STATION", "CONSTRUCTION SITE", "SKELL FOUNDATION CAMPUS", "DARKWOOD ISLAND PORT" };
+string[] DRIFTWOODISLETSArray = { "DRIFTWOOD ISLETS TESTING ZONE", "CAMP KODIAK" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -157,6 +158,11 @@ while (Convert.ToInt32(input) != 0)
         {
             int CAPENORTH = random.Next(0, 7);
             Console.WriteLine(CAPENORTHArray[CAPENORTH]);
+        }
+        if (province == 4)
+        {
+            int DRIFTWOODISLETS = random.Next(0, 1);
+            Console.WriteLine(DRIFTWOODISLETSArray[DRIFTWOODISLETS]);
         }
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
