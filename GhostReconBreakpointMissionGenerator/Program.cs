@@ -1,6 +1,6 @@
 ﻿Random random = new Random();
 string[] typeArray = { "EPISODE 1", "EPISODE 2", "EPISODE 3", "HARUHI ITO", "A LONG ROAD TO VICTORY", "MADS SCHULZ", "STAYING SAFE", "OPERATION AMBER SKY", "RESISTANCE",
-                       "OPERATION MOTHERLAND" };
+                       "OPERATION MOTHERLAND", "OPERATION SILVERSTONE" };
 string[] EPISODE1Array = { "OPERATION GREENSTONE", "LTC. COLE D. WALKER", "JACE SKELL", "MAURICE FOX", "AUROA ARCHIPELAGO", "FLYCATCHER", "ROSEBUD", "PAULA MADERA",
                            "CHRISTINA CROMWELL", "SILVERBACK", "CARL CHISUM", "AYANA PURI" };
 string[] OPERATIONGREENSTONEArray = { "NO WAY OUT", "EAGLES DOWN" };
@@ -22,6 +22,10 @@ string[] OPERATIONAMBERSKYArray = { "THE ROOT OF ALL EVIL", "DESPERATE MEASURES"
                                     "FIGHT FIRE WITH FIRE", "BREAKING THE WHEEL", "SLUMBERING BEAST", "HUMAN TRIAL(S)" };
 string[] RESISTANCEArray = { "COUNTERATTACK", "FRIENDS IN NEED", "HIT THE ROAD", "HEARTS AND SOULS", "LICENSE EXPIRED", "BRAIN DRAIN", "A SAFER PLACE",
                              "SILENT RECOVERY", "TRAFFIC CONTROL" };
+string[] OPERATIONSILVERSTONEArray = { "PREPARATION MISSIONS", "NORTH EAST MISSIONS", "DARKWOOD ISLAND MISSIONS", "NORTH WEST MISSIONS", "WEST COAST MISSIONS", "SOUTH ISLANDS MISSIONS", "SOUTH EAST MISSIONS", "EAST SIDE MISSIONS", "ALPINE REGION MISSIONS" };
+string[] PREPARATIONMISSIONSArray = { "EP|P1|SHIPPING CENTER", "EP|P2|CHEM-EXTRACTION COMPLEX", "EP|P3|AIRSHIP STATION", "EP|P4|DRONE STATION TIGER 04" };
+string[] NORTHEASTMISSIONSArray = { "NE|E1|AIRSHIP STATION", "NE|E2|ENEMY LAND BASE", "NE|E3|EQUIPMENT DEPOT", "NE|E4|AMMUNITION DEPOT", "NE|E5|RADAR STATION NORTH", "NE|E6|EDGEWOOD NORTH", "NE|E7|CAMP TIGER", "NE|V1|ANCIENT HARBOR", "NE|V2|ANTI-AIRCRAFT RUINS",
+                                    "NE|V3|EDGEHOD SOUTH", "NE|C1|STATION W052", "NE|D1|CONTROL STATION TIGER 02", "NE|D2|DRONE STATION W051", "NE|D3|DRONE STATION TIGER 03", "NE|D4|DRONE STATION TIGER 04", "NE|D5|FEN BOG TESTING ZONE" }
 string[] provinceArray = { "SECTOR 03", "SECTOR 01", "SECTOR 02", "CAPE NORTH", "DRIFTWOOD ISLETS", "SMUGGLER COVES", "SINKING COUNTRY", "WILD COAST", "MOUNT HODGSON", "FEN BOG",
                            "NEW ARGYLL", "SILENT MOUNTAIN", "WHALER'S BAY", "INFINITY", "LAKE COUNTRY", "GOOD HOPE MOUNTAIN", "CHANNELS", "NEW STIRLING", "RESTRICTED AREA 01",
                            "SEAL ISLANDS", "LIBERTY", "EGG ISLAND", "WINDY ISLANDS" };
@@ -30,6 +34,8 @@ string[] SECTOR01Array = { "CHEMICAL PIPELINE", "CHEMICAL REFINERY", "GOLEM ISLA
 string[] SECTOR02Array = { "CAMP SALAMANDER", "CAMP PHOENIX", "FORGOTTEN SANCTUARY", "GOLEM ISLAND TESTING ZONE", "MISSILE SITE RUINS", "QUANTUM COMPUTER CENTER" };
 string[] CAPENORTHArray = { "A.I. EXPERIMENTAL CENTER", "DRIFTWOOD ISLETS TESTING ZONE", "CAMPUS RELAY STATION", "CAMPUS DATA FARM", "UNDERWATER CABLE STATION", "CONSTRUCTION SITE", "SKELL FOUNDATION CAMPUS", "DARKWOOD ISLAND PORT" };
 string[] DRIFTWOODISLETSArray = { "DRIFTWOOD ISLETS TESTING ZONE", "CAMP KODIAK" };
+string[] SMUGGLERCOVESArray = { "MAUNGA NUI PORT", "SPANISH FORTRESS", "CHECKPOINT TIGER CHARLIE", "SMUGGLER COVES FREIGHT YARD", "CHECKPOINT TIGER BRAVO", "COMPOSITE FACTORY", "CHECKPOINT TIGER DELTA", "DRONE STATION W011", "OUTPOST RED TIGER", "WIND FARM W01",
+                                "AUROA MATERIALS DEPOSIT", "POLYMORPH MODELING", "FOXGLOVE STATION", "OLEANDER STATION", "CHECKPOINT TIGER ALPHA" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -40,91 +46,106 @@ while (Convert.ToInt32(input) != 0)
 {
     if(Convert.ToInt32(input) == 1)
     {
-        int type = random.Next(0, 9);
+        int type = random.Next(0, 11);
         Console.WriteLine(typeArray[type]);
         if (type == 0)
         {
-            int EPISODE1 = random.Next(0, 11);
+            int EPISODE1 = random.Next(0, 12);
             Console.WriteLine(EPISODE1Array[EPISODE1]);
             if (EPISODE1 == 0)
             {
-                int OPERATIONGREENSTONE = random.Next(0, 1);
+                int OPERATIONGREENSTONE = random.Next(0, 2);
                 Console.WriteLine(OPERATIONGREENSTONEArray[OPERATIONGREENSTONE]);
             }
             if (EPISODE1 == 1)
             {
-                int LTCCOLEDWALKER = random.Next(0, 2);
+                int LTCCOLEDWALKER = random.Next(0, 3);
                 Console.WriteLine(LTCCOLEDWALKERArray[LTCCOLEDWALKER]);
             }
             if (EPISODE1 == 2)
             {
-                int JACESKELL = random.Next(0, 2);
+                int JACESKELL = random.Next(0, 3);
                 Console.WriteLine(JACESKELLArray[JACESKELL]);
             }
             if (EPISODE1 == 4)
             {
-                int AUROAARCHIPELAGO = random.Next(0, 32);
+                int AUROAARCHIPELAGO = random.Next(0, 33);
                 Console.WriteLine(AUROAARCHIPELAGOArray[AUROAARCHIPELAGO]);
             }
             if (EPISODE1 == 7)
             {
-                int PAULAMADERA = random.Next(0, 4);
+                int PAULAMADERA = random.Next(0, 5);
                 Console.WriteLine(PAULAMADERAArray[PAULAMADERA]);
             }
             if (EPISODE1 == 8)
             {
-                int CHRISTINACROMWELL = random.Next(0, 4);
+                int CHRISTINACROMWELL = random.Next(0, 5);
                 Console.WriteLine(CHRISTINACROMWELLArray[CHRISTINACROMWELL]);
             }
             if (EPISODE1 == 10)
             {
-                int CARLCHISUM = random.Next(0, 4);
+                int CARLCHISUM = random.Next(0, 5);
                 Console.WriteLine(CARLCHISUMArray[CARLCHISUM]);
             }
         }
         else if (type == 1)
         {
-            int EPISODE2 = random.Next(0, 7);
+            int EPISODE2 = random.Next(0, 8);
             Console.WriteLine(EPISODE2Array[EPISODE2]);
         }
         else if (type == 2)
         {
-            int EPISODE3 = random.Next(0, 9);
+            int EPISODE3 = random.Next(0, 10);
             Console.WriteLine(EPISODE3Array[EPISODE3]);
         }
         else if (type == 3)
         {
-            int HARUHIITO = random.Next(0, 5);
+            int HARUHIITO = random.Next(0, 6);
             Console.WriteLine(HARUHIITOArray[HARUHIITO]);
         }
         else if (type == 4)
         {
-            int ALONGROADTOVICTORY = random.Next(1, 6);
+            int ALONGROADTOVICTORY = random.Next(1, 7);
             Console.WriteLine("Mission " + ALONGROADTOVICTORY);
         }
         else if (type == 5)
         {
-            int MADSSCHULZ = random.Next(0, 5);
+            int MADSSCHULZ = random.Next(0, 6);
             Console.WriteLine(MADSSCHULZArray[MADSSCHULZ]);
         }
         else if (type == 6)
         {
-            int STAYINGSAFE = random.Next(1, 6);
+            int STAYINGSAFE = random.Next(1, 7);
             Console.WriteLine("Mission " + STAYINGSAFE);
         }
         else if (type == 7)
         {
-            int OPERATIONAMBERSKY = random.Next(0, 8);
+            int OPERATIONAMBERSKY = random.Next(0, 9);
             Console.WriteLine(OPERATIONAMBERSKYArray[OPERATIONAMBERSKY]);
         }
         else if (type == 8)
         {
-            int RESISTANCE = random.Next(0, 8);
+            int RESISTANCE = random.Next(0, 9);
             Console.WriteLine(RESISTANCEArray[RESISTANCE]);
         }
         else if (type == 9)
         {
 
+        }
+        else if (type == 10)
+        {
+            int OPERATIONSILVERSTONE = random.Next(0, 9);
+            Console.WriteLine(OPERATIONSILVERSTONEArray[OPERATIONSILVERSTONE]);
+            if (OPERATIONSILVERSTONE == 0)
+            {
+                int PREPARATIONMISSIONS = random.Next(0, 4);
+                Console.WriteLine(PREPARATIONMISSIONSArray[PREPARATIONMISSIONS]);
+            }
+            if (OPERATIONSILVERSTONE == 1)
+            {
+                int NORTHEASTMISSIONS = random.Next(0, 16);
+                Console.WriteLine(NORTHEASTMISSIONSArray[NORTHEASTMISSIONS]);
+            }
         }
         Console.WriteLine("Enter 1 if you would like a different in game mission.");
         Console.WriteLine("Enter 2 to randomly generate a base.");
@@ -137,32 +158,37 @@ while (Convert.ToInt32(input) != 0)
     }
     else if (Convert.ToInt32(input) == 2)
     {
-        int province = random.Next(0, 22);
+        int province = random.Next(0, 23);
         Console.WriteLine(provinceArray[province]);
         if(province == 0)
         {
-            int SECTOR03 = random.Next(0, 5);
+            int SECTOR03 = random.Next(0, 6);
             Console.WriteLine(SECTOR03Array[SECTOR03]);
         }
         if(province == 1)
         {
-            int SECTOR01 = random.Next(0, 4);
+            int SECTOR01 = random.Next(0, 5);
             Console.WriteLine(SECTOR01Array[SECTOR01]);
         }
         if(province == 2)
         {
-            int SECTOR02 = random.Next(0, 5);
+            int SECTOR02 = random.Next(0, 6);
             Console.WriteLine(SECTOR02Array[SECTOR02]);
         }
         if (province == 3)
         {
-            int CAPENORTH = random.Next(0, 7);
+            int CAPENORTH = random.Next(0, 8);
             Console.WriteLine(CAPENORTHArray[CAPENORTH]);
         }
         if (province == 4)
         {
-            int DRIFTWOODISLETS = random.Next(0, 1);
+            int DRIFTWOODISLETS = random.Next(0, 2);
             Console.WriteLine(DRIFTWOODISLETSArray[DRIFTWOODISLETS]);
+        }
+        if (province == 5)
+        {
+            int SMUGGLERCOVES = random.Next(0, 15);
+            Console.WriteLine(SMUGGLERCOVESArray[SMUGGLERCOVES]);
         }
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
