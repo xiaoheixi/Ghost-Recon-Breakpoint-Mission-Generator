@@ -25,7 +25,8 @@ string[] RESISTANCEArray = { "COUNTERATTACK", "FRIENDS IN NEED", "HIT THE ROAD",
 string[] OPERATIONSILVERSTONEArray = { "PREPARATION MISSIONS", "NORTH EAST MISSIONS", "DARKWOOD ISLAND MISSIONS", "NORTH WEST MISSIONS", "WEST COAST MISSIONS", "SOUTH ISLANDS MISSIONS", "SOUTH EAST MISSIONS", "EAST SIDE MISSIONS", "ALPINE REGION MISSIONS" };
 string[] PREPARATIONMISSIONSArray = { "EP|P1|SHIPPING CENTER", "EP|P2|CHEM-EXTRACTION COMPLEX", "EP|P3|AIRSHIP STATION", "EP|P4|DRONE STATION TIGER 04" };
 string[] NORTHEASTMISSIONSArray = { "NE|E1|AIRSHIP STATION", "NE|E2|ENEMY LAND BASE", "NE|E3|EQUIPMENT DEPOT", "NE|E4|AMMUNITION DEPOT", "NE|E5|RADAR STATION NORTH", "NE|E6|EDGEWOOD NORTH", "NE|E7|CAMP TIGER", "NE|V1|ANCIENT HARBOR", "NE|V2|ANTI-AIRCRAFT RUINS",
-                                    "NE|V3|EDGEHOD SOUTH", "NE|C1|STATION W052", "NE|D1|CONTROL STATION TIGER 02", "NE|D2|DRONE STATION W051", "NE|D3|DRONE STATION TIGER 03", "NE|D4|DRONE STATION TIGER 04", "NE|D5|FEN BOG TESTING ZONE" }
+                                    "NE|V3|EDGEHOD SOUTH", "NE|C1|STATION W052", "NE|D1|CONTROL STATION TIGER 02", "NE|D2|DRONE STATION W051", "NE|D3|DRONE STATION TIGER 03", "NE|D4|DRONE STATION TIGER 04", "NE|D5|FEN BOG TESTING ZONE" };
+string[] DARKWOODISLANDMISSIONSArray = { "DW|C1|UNDERWATER CABLE STATION", "DW|C2|COMMS CENTER", "DW|C3|D1|CAMPUS RELAY STATION", "DW|D2|A.I. EXPERIMENTAL CENTER", "DW|D3|DRIFTWOOD ISLETS TEST ZONE", "DW|V1|E1|CAMP KODIAK", "DW|E2|BLACK MOUNT BUNKER" };
 string[] provinceArray = { "SECTOR 03", "SECTOR 01", "SECTOR 02", "CAPE NORTH", "DRIFTWOOD ISLETS", "SMUGGLER COVES", "SINKING COUNTRY", "WILD COAST", "MOUNT HODGSON", "FEN BOG",
                            "NEW ARGYLL", "SILENT MOUNTAIN", "WHALER'S BAY", "INFINITY", "LAKE COUNTRY", "GOOD HOPE MOUNTAIN", "CHANNELS", "NEW STIRLING", "RESTRICTED AREA 01",
                            "SEAL ISLANDS", "LIBERTY", "EGG ISLAND", "WINDY ISLANDS" };
@@ -36,6 +37,10 @@ string[] CAPENORTHArray = { "A.I. EXPERIMENTAL CENTER", "DRIFTWOOD ISLETS TESTIN
 string[] DRIFTWOODISLETSArray = { "DRIFTWOOD ISLETS TESTING ZONE", "CAMP KODIAK" };
 string[] SMUGGLERCOVESArray = { "MAUNGA NUI PORT", "SPANISH FORTRESS", "CHECKPOINT TIGER CHARLIE", "SMUGGLER COVES FREIGHT YARD", "CHECKPOINT TIGER BRAVO", "COMPOSITE FACTORY", "CHECKPOINT TIGER DELTA", "DRONE STATION W011", "OUTPOST RED TIGER", "WIND FARM W01",
                                 "AUROA MATERIALS DEPOSIT", "POLYMORPH MODELING", "FOXGLOVE STATION", "OLEANDER STATION", "CHECKPOINT TIGER ALPHA" };
+string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
+                        "Capture enemy HVTs.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
+                        "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.", "No drones are allowed.",
+                        "No voice communication is allowed.", "Optical Camo has been disabled." };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -146,7 +151,14 @@ while (Convert.ToInt32(input) != 0)
                 int NORTHEASTMISSIONS = random.Next(0, 16);
                 Console.WriteLine(NORTHEASTMISSIONSArray[NORTHEASTMISSIONS]);
             }
+            if (OPERATIONSILVERSTONE == 2)
+            {
+                int DARKWOODISLANDMISSIONS = random.Next(0, 7);
+                Console.WriteLine(DARKWOODISLANDMISSIONSArray[DARKWOODISLANDMISSIONS]);
+            }
         }
+        int OBJECTIVES = random.Next(0, 22);
+        Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         Console.WriteLine("Enter 1 if you would like a different in game mission.");
         Console.WriteLine("Enter 2 to randomly generate a base.");
         Console.WriteLine("Enter 0 to exit.");
@@ -190,6 +202,8 @@ while (Convert.ToInt32(input) != 0)
             int SMUGGLERCOVES = random.Next(0, 15);
             Console.WriteLine(SMUGGLERCOVESArray[SMUGGLERCOVES]);
         }
+        int OBJECTIVES = random.Next(0, 22);
+        Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
         Console.WriteLine("Enter 0 to exit.");
