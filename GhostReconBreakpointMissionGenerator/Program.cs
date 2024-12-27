@@ -159,6 +159,8 @@ while (Convert.ToInt32(input) != 0)
         }
         int OBJECTIVES = random.Next(0, 22);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
+        OBJECTIVES = random.Next(0, 22);
+        Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         Console.WriteLine("Enter 1 if you would like a different in game mission.");
         Console.WriteLine("Enter 2 to randomly generate a base.");
         Console.WriteLine("Enter 0 to exit.");
@@ -203,6 +205,8 @@ while (Convert.ToInt32(input) != 0)
             Console.WriteLine(SMUGGLERCOVESArray[SMUGGLERCOVES]);
         }
         int OBJECTIVES = random.Next(0, 22);
+        Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
+        OBJECTIVES = random.Next(0, 22);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
