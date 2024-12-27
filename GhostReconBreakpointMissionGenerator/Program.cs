@@ -43,7 +43,7 @@ string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Di
                         "Capture enemy HVTs.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon." };
 string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
-                    "Map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No supressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
+                    "Map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
                     "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled." };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
