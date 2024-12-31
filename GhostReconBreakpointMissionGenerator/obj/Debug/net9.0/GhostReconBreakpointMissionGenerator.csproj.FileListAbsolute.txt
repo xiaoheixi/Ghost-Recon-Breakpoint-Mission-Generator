@@ -1,0 +1,15 @@
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.AssemblyInfoInputs.cache
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.AssemblyInfo.cs
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.csproj.CoreCompileInputs.cache
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.sourcelink.json
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\bin\Debug\net9.0\GhostReconBreakpointMissionGenerator.exe
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\bin\Debug\net9.0\GhostReconBreakpointMissionGenerator.deps.json
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\bin\Debug\net9.0\GhostReconBreakpointMissionGenerator.runtimeconfig.json
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\bin\Debug\net9.0\GhostReconBreakpointMissionGenerator.dll
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\bin\Debug\net9.0\GhostReconBreakpointMissionGenerator.pdb
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.dll
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\refint\GhostReconBreakpointMissionGenerator.dll
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.pdb
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\GhostReconBreakpointMissionGenerator.genruntimeconfig.cache
+C:\Users\justi\Source\Repos\xiaoheixi\Ghost-Recon-Breakpoint-Mission-Generator\GhostReconBreakpointMissionGenerator\obj\Debug\net9.0\ref\GhostReconBreakpointMissionGenerator.dll

@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GhostReconBreakpointMissionGenerator",
-    "\\GhostReconBreakpointMissionGenerator\\obj"
+    "\\GhostReconBreakpointMissionGenerator"
   ],
-  "SelectedNode": "\\GhostReconBreakpointMissionGenerator\\Program.cs",
+  "SelectedNode": "\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj",
   "PreviewInSolutionExplorer": false
 }

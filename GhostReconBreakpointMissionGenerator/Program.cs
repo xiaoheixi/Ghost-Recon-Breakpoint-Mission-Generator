@@ -36,6 +36,8 @@ string[] SOUTHISLANDSMISSIONSArray = { "SI|E1|NAVY FUELING STATION", "SI|E2|FUEL
 string[] SOUTHEASTMISSIONSArray = { "SE|E1|LIBERTY AIRPORT", "SE|E2|AUROA PARLIAMENT", "SE|E3|LIBERTY CITY", "SE|E4|LIBERTY PORT", "SE|E5|LIBERTY TRANSPORT HUB", "SE|E6|JACE SKELL DAM", "SE|E7|FREEMAN RESIDENCES", "SE|E8|CAMP FOX", "SE|E9|ANCIENT FORT",
                                     "SE|E10|ANCIENT VILLAGE", "SE|D1|DRONE STATION W191", "SE|D2|DRONE STATION W192", "SE|D3|CONTROL STATION FOX 02", "SE|D4|CONTROL STATION FOX 01", "SE|D5|TRAINING CENTER", "SE|D6|CONTROL STATION FOX 01", "SE|D7|PROTOTYPE WORKSHOP",
                                     "SE|D8|MAINTENANCE AREA", "SE|D9|ASSEMBLY HALL OMEGA 01", "SE|D10|DRONE STATION W132", "SE|C1|STATION W161", "SE|C2|STATION W131" };
+string[] EASTSIDEMISSIONSArray = { "ES|E1|OUTPOST GREEN VIPER", "ES|E2|AUROA AIRPORT", "ES|E3|SKELL SECURITY", "ES|E4|VEGA RESIDENCES", "ES|E5|TWO LAKES RESIDENCES", "ES|E6|ANCIENT FORT", "ES|E7|ANCIENT VILLAGE", "ES|E8|ANCIENT FORT", "ES|V1|OUTPOST BLACK TIGER",
+                                   "ES|D1|RED VIPER OUTPOST", "ES|D2|PROTOTYPE WORKSHOP", "ES|D3|SKELL SECURITY ASSEMBLY HALL", "ES|D4|CONTROL STATION VIPER 04" };
 string[] provinceArray = { "SECTOR 03", "SECTOR 01", "SECTOR 02", "CAPE NORTH", "DRIFTWOOD ISLETS", "SMUGGLER COVES", "SINKING COUNTRY", "WILD COAST", "MOUNT HODGSON", "FEN BOG",
                            "NEW ARGYLL", "SILENT MOUNTAIN", "WHALER'S BAY", "INFINITY", "LAKE COUNTRY", "GOOD HOPE MOUNTAIN", "CHANNELS", "NEW STIRLING", "RESTRICTED AREA 01",
                            "SEAL ISLANDS", "LIBERTY", "EGG ISLAND", "WINDY ISLANDS" };
@@ -47,7 +49,7 @@ string[] DRIFTWOODISLETSArray = { "DRIFTWOOD ISLETS TESTING ZONE", "CAMP KODIAK"
 string[] SMUGGLERCOVESArray = { "MAUNGA NUI PORT", "SPANISH FORTRESS", "CHECKPOINT TIGER CHARLIE", "SMUGGLER COVES FREIGHT YARD", "CHECKPOINT TIGER BRAVO", "COMPOSITE FACTORY", "CHECKPOINT TIGER DELTA", "DRONE STATION W011", "OUTPOST RED TIGER", "WIND FARM W01",
                                 "AUROA MATERIALS DEPOSIT", "POLYMORPH MODELING", "FOXGLOVE STATION", "OLEANDER STATION", "CHECKPOINT TIGER ALPHA" };
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
-                        "Capture enemy HVTs.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
+                        "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon." };
 string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
                     "Map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
@@ -187,6 +189,12 @@ while (Convert.ToInt32(input) != 0)
                 int SOUTHEASTMISSIONS = random.Next(0, 22);
                 Console.WriteLine(SOUTHEASTMISSIONSArray[SOUTHEASTMISSIONS]);
             }
+            if (OPERATIONSILVERSTONE == 7)
+            {
+                int EASTSIDEMISSIONS = random.Next(0, 13);
+                Console.WriteLine(EASTSIDEMISSIONSArray[EASTSIDEMISSIONS]);
+            }
+            
         }
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
