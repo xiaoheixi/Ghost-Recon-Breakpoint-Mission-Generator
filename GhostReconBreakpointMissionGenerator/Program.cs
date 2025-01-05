@@ -50,12 +50,15 @@ string[] CAPENORTHArray = { "A.I. EXPERIMENTAL CENTER", "DRIFTWOOD ISLETS TESTIN
 string[] DRIFTWOODISLETSArray = { "DRIFTWOOD ISLETS TESTING ZONE", "CAMP KODIAK" };
 string[] SMUGGLERCOVESArray = { "MAUNGA NUI PORT", "SPANISH FORTRESS", "CHECKPOINT TIGER CHARLIE", "SMUGGLER COVES FREIGHT YARD", "CHECKPOINT TIGER BRAVO", "COMPOSITE FACTORY", "CHECKPOINT TIGER DELTA", "DRONE STATION W011", "OUTPOST RED TIGER", "WIND FARM W01",
                                 "AUROA MATERIALS DEPOSIT", "POLYMORPH MODELING", "FOXGLOVE STATION", "OLEANDER STATION", "CHECKPOINT TIGER ALPHA" };
+string[] SINKINGCOUNTRYArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS SAM SITE", "HARRIER SAM SITE", "SCHULZ HOMESTEAD", "RADAR STATION NORTH", "OSPREY SAM SITE", "CHECKPOINT TIGER GOLF", "BUNKER EDGEHOD NORTH", "ANTI-AIRCRAFT RUINS", "HOWARD PORT",
+                                 "AMMUNITION DEPOT", "CHECKPOINT TIGER INDIA", "SPARROWHAWK SAM SITE", "SENTINEL CORP. LAND BASE", "CHECKPOINT TIGER JULIET", "CAMP TIGER", "EQUIPMENT DEPOT", "CHECKPOINT TIGER KILO", "RUSSELL HOMESTEAD", "BUNKER EDGEHOD SOUTH" };
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
                         "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon." };
 string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
                     "Map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
-                    "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled." };
+                    "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
+string[] WEAPONTYPEArray = { "ASSAULT RIFLES", "HANDGUNS", "LIGHT MACHINE GUNS", "SHOTGUNS", "SUBMACHINE GUNS", "SNIPER RIFLES", "DESIGNATED MARKSMAN RIFLES", "GRENADE LAUNCHERS" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -209,6 +212,8 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         int SKULLS = random.Next(0, 15);
         Console.WriteLine(SKULLSArray[SKULLS]);
+        int WEAPONTYPE = random.Next(0, 9);
+        Console.WriteLine(WEAPONTYPEArray[WEAPONTYPE]);
         Console.WriteLine("Enter 1 if you would like a different in game mission.");
         Console.WriteLine("Enter 2 to randomly generate a base.");
         Console.WriteLine("Enter 0 to exit.");
@@ -252,12 +257,19 @@ while (Convert.ToInt32(input) != 0)
             int SMUGGLERCOVES = random.Next(0, 15);
             Console.WriteLine(SMUGGLERCOVESArray[SMUGGLERCOVES]);
         }
+        if (province == 6)
+        {
+            int SINKINGCOUNTRY = random.Next(0, 21);
+            Console.WriteLine(SINKINGCOUNTRYArray[SINKINGCOUNTRY]);
+        }
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         int SKULLS = random.Next(0, 15);
         Console.WriteLine(SKULLSArray[SKULLS]);
+        int WEAPONTYPE = random.Next(0, 9);
+        Console.WriteLine(WEAPONTYPEArray[WEAPONTYPE]);
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
         Console.WriteLine("Enter 0 to exit.");
