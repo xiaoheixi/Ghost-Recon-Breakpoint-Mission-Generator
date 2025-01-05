@@ -58,7 +58,11 @@ string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Di
 string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
                     "Map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
                     "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
-string[] WEAPONTYPEArray = { "ASSAULT RIFLES", "HANDGUNS", "LIGHT MACHINE GUNS", "SHOTGUNS", "SUBMACHINE GUNS", "SNIPER RIFLES", "DESIGNATED MARKSMAN RIFLES", "GRENADE LAUNCHERS" };
+string[] WEAPONTYPEArray = { "ASSAULT RIFLES", "LIGHT MACHINE GUNS", "SHOTGUNS", "SUBMACHINE GUNS", "SNIPER RIFLES", "DESIGNATED MARKSMAN RIFLES", "GRENADE LAUNCHERS", "None" };
+string[] ITEMWHEELArray = { "AGILITY RATION", "BINOCULARS", "BREACH TORCH", "C4 CHARGE MK.1", "C4 CHARGE MK.2", "DEXTERITY RATION ADVANCED", "DEXTERITY RATION BASIC", "DEXTERITY RATION EXTREME", "DIV. LURE", "EMP GRENADE MK.1", "EMP GRENADE MK.2", "EMP GRENADE MK.3",
+                            "ENDURANCE RATION ADVANCED", "ENDURANCE BASIC", "FITNESS RATION ADVANCED", "FITNESS RATION BASIC", "FITNESS RATION EXTREME", "FLASHBANG", "FRAG GRENADE MK.1", "FRAG GRENADE MK.2", "GAS FILTER", "INTEL GRENADE", "MINE MK.1", "MINE MK.2",
+                            "PROJECTION RATION", "PROTECTIVE RATION ADVANCED", "PROTECTIVE RATION BASIC", "PROTECTIVE RATION EXTREME", "RECOVERY RATION ADVANCED", "RECOVERY RATION BASIC", "RESILIENCE RATION ADVANCED", "RESILIENCE RATION BASIC", "ROCKET LAUNCHER",
+                            "RUSSION RATION", "SYNC SHOT DRONE", "SYRINGE MK.1", "SYRINGE MK.2", "WATER CANTEEN", "VIGOR RATION", "VISUAL ACUITY RATION ADVANCED", "VISUAL ACUITY RATION BASIC", "VISUAL ACUITY RATION EXTREME" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -212,8 +216,14 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         int SKULLS = random.Next(0, 15);
         Console.WriteLine(SKULLSArray[SKULLS]);
-        int WEAPONTYPE = random.Next(0, 9);
-        Console.WriteLine(WEAPONTYPEArray[WEAPONTYPE]);
+        int WEAPONTYPE = random.Next(0, 8);
+        Console.WriteLine("Primary Weapon: " + WEAPONTYPEArray[WEAPONTYPE]);
+        for (int x = 0; x < 6; x++)
+        {
+            int ITEMWHEEL = random.Next(0, 42);
+            int slot = x + 1;
+            Console.WriteLine("Item Wheel Slot " + slot + ": " + ITEMWHEELArray[ITEMWHEEL]);
+        }
         Console.WriteLine("Enter 1 if you would like a different in game mission.");
         Console.WriteLine("Enter 2 to randomly generate a base.");
         Console.WriteLine("Enter 0 to exit.");
@@ -268,8 +278,14 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         int SKULLS = random.Next(0, 15);
         Console.WriteLine(SKULLSArray[SKULLS]);
-        int WEAPONTYPE = random.Next(0, 9);
-        Console.WriteLine(WEAPONTYPEArray[WEAPONTYPE]);
+        int WEAPONTYPE = random.Next(0, 8);
+        Console.WriteLine("Primary Weapon: " + WEAPONTYPEArray[WEAPONTYPE]);
+        for (int x = 0; x < 6; x++)
+        {
+            int ITEMWHEEL = random.Next(0, 42);
+            int slot = x + 1;
+            Console.WriteLine("Item Wheel Slot " + slot + ": " + ITEMWHEELArray[ITEMWHEEL]);
+        }
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
         Console.WriteLine("Enter 0 to exit.");
