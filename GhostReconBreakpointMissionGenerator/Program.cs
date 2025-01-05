@@ -62,7 +62,10 @@ string[] WEAPONTYPEArray = { "ASSAULT RIFLES", "LIGHT MACHINE GUNS", "SHOTGUNS",
 string[] ITEMWHEELArray = { "AGILITY RATION", "BINOCULARS", "BREACH TORCH", "C4 CHARGE MK.1", "C4 CHARGE MK.2", "DEXTERITY RATION ADVANCED", "DEXTERITY RATION BASIC", "DEXTERITY RATION EXTREME", "DIV. LURE", "EMP GRENADE MK.1", "EMP GRENADE MK.2", "EMP GRENADE MK.3",
                             "ENDURANCE RATION ADVANCED", "ENDURANCE BASIC", "FITNESS RATION ADVANCED", "FITNESS RATION BASIC", "FITNESS RATION EXTREME", "FLASHBANG", "FRAG GRENADE MK.1", "FRAG GRENADE MK.2", "GAS FILTER", "INTEL GRENADE", "MINE MK.1", "MINE MK.2",
                             "PROJECTION RATION", "PROTECTIVE RATION ADVANCED", "PROTECTIVE RATION BASIC", "PROTECTIVE RATION EXTREME", "RECOVERY RATION ADVANCED", "RECOVERY RATION BASIC", "RESILIENCE RATION ADVANCED", "RESILIENCE RATION BASIC", "ROCKET LAUNCHER",
-                            "RUSSION RATION", "SYNC SHOT DRONE", "SYRINGE MK.1", "SYRINGE MK.2", "WATER CANTEEN", "VIGOR RATION", "VISUAL ACUITY RATION ADVANCED", "VISUAL ACUITY RATION BASIC", "VISUAL ACUITY RATION EXTREME" };
+                            "RUSSIAN RATION", "SYNC SHOT DRONE", "SYRINGE MK.1", "SYRINGE MK.2", "WATER CANTEEN", "VIGOR RATION", "VISUAL ACUITY RATION ADVANCED", "VISUAL ACUITY RATION BASIC", "VISUAL ACUITY RATION EXTREME" };
+string[] HANDGUNSArray = { "Desert Eagle", "F40", "5.7 USG", "M1911", "M1911 | Promise", "M9", "Gibson's M9", "P227", "P227 | Survival", "P320", "P45T", "PX4", "USP Tactical", "SHARP THUNDER", "C-SFP", "Stainless Extended .45", "Maxim 9", "Maxim 9 | Echelon",
+                           "Maxim 9 | Custom", "MK 23", "MK 23 | Echelon", "SC IS HDG", "C-SFP | BAAL", "Desert Eagle | Custom", "P320 | Sentinel", "Bailiff 410", "Desert Eagle | Survival" };
+string[] TACTICSArray = { "ASSAULT", "SHARPSHOOTER", "PANTHER", "FIELD MEDIC", "ENGINEER", "ECHELON", "PATHFINDER" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -218,12 +221,16 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine(SKULLSArray[SKULLS]);
         int WEAPONTYPE = random.Next(0, 8);
         Console.WriteLine("Primary Weapon: " + WEAPONTYPEArray[WEAPONTYPE]);
+        int HANDGUNS = random.Next(0, 27);
+        Console.WriteLine("Secondary Weapon: " + HANDGUNSArray[HANDGUNS]);
         for (int x = 0; x < 6; x++)
         {
             int ITEMWHEEL = random.Next(0, 42);
             int slot = x + 1;
             Console.WriteLine("Item Wheel Slot " + slot + ": " + ITEMWHEELArray[ITEMWHEEL]);
         }
+        int TACTICS = random.Next(0, 7);
+        Console.WriteLine("TACTICS: " + TACTICSArray[TACTICS]);
         Console.WriteLine("Enter 1 if you would like a different in game mission.");
         Console.WriteLine("Enter 2 to randomly generate a base.");
         Console.WriteLine("Enter 0 to exit.");
@@ -280,12 +287,16 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine(SKULLSArray[SKULLS]);
         int WEAPONTYPE = random.Next(0, 8);
         Console.WriteLine("Primary Weapon: " + WEAPONTYPEArray[WEAPONTYPE]);
+        int HANDGUNS = random.Next(0, 27);
+        Console.WriteLine("Secondary Weapon: " + HANDGUNSArray[HANDGUNS]);
         for (int x = 0; x < 6; x++)
         {
             int ITEMWHEEL = random.Next(0, 42);
             int slot = x + 1;
             Console.WriteLine("Item Wheel Slot " + slot + ": " + ITEMWHEELArray[ITEMWHEEL]);
         }
+        int TACTICS = random.Next(0, 7);
+        Console.WriteLine("TACTICS: " + TACTICSArray[TACTICS]);
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
         Console.WriteLine("Enter 0 to exit.");
