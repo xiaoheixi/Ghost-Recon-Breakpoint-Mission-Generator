@@ -55,8 +55,8 @@ string[] SINKINGCOUNTRYArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
                         "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon." };
-string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
-                    "Map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
+string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
+                    "The map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
                     "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
 string[] GEARSCOREArray = { "On", "Off" };
 string[] WEAPONTYPEArray = { "ASSAULT RIFLES", "LIGHT MACHINE GUNS", "SHOTGUNS", "SUBMACHINE GUNS", "SNIPER RIFLES", "DESIGNATED MARKSMAN RIFLES", "GRENADE LAUNCHERS", "None" };
@@ -70,10 +70,16 @@ string[] ASSAULTRIFLESArray = { "AK12", "AK47", "AK47 Assault", "AK74", "AK74 As
                                 "VHSD2 | Survival", "TAVOR | Custom", "MK18", "ACR", "AC-AR", "ACR Assault", "Resistance ASR Shorty", "SR-3M", "SR-3M Tactical", "ACR | Brown", "AK47 Shorty", "K1A" };
 string[] HANDGUNSArray = { "Desert Eagle", "F40", "5.7 USG", "M1911", "M1911 | Promise", "M9", "Gibson's M9", "P227", "P227 | Survival", "P320", "P45T", "PX4", "USP Tactical", "SHARP THUNDER", "C-SFP", "Stainless Extended .45", "Maxim 9", "Maxim 9 | Echelon",
                            "Maxim 9 | Custom", "MK 23", "MK 23 | Echelon", "SC IS HDG", "C-SFP | BAAL", "Desert Eagle | Custom", "P320 | Sentinel", "Bailiff 410", "Desert Eagle | Survival" };
+string[] LIGHTMACHINEGUNSArray = { "MG121", "L86A1", "CTMMG", "MK48", "MK48 Compact", "6P41", "CTMMG | Baal", "STONER", "STONER Compact", "T95" };
+string[] SHOTGUNSArray = { "BOSG12", "M4", "M4 Assault", "M4 Shorty", "KSG12", "Silverback's KSG12", "SASG12", "RU12SG", "RU12SG Assault", "SPAS-12", "ACS12", "ACS12 | Custom", "M590A1", "M590A1 | Survival" };
 string[] SUBMACHINEGUNSArray = { "MP5", "MP7", "MPX", "MPX Tactical", "P90", "Flycatcher's P90", "Bullpup PDR", "SCORPION EVO3", "SCORPION EVO3 CQC", "SCORPION EVO3 Tactical", "UMP", "Vector", "Vector Shorty", "Vector | Quantum", "SN-9mm", "MP5 | SHD", "UZI 9mm",
                                  "Echelon SMG", "Echelon SMG | Custom", "UMP CQC", "Honey Badger", "Honey Badger | Brown" };
 string[] SNIPERRIFLESArray = { "TAC50", "HTI", "L115A3", "M82", "Zastava M93", "Recon-A1", "Scorpio", "HTI | Survival", "TAC50 | Brown", "Paladin 9 SNR", "M82 | Cerberus", "Paladin 9 SNR | Survival", "HTI | Brown", "M82 | Survival", "TAC50 | Wolves", "MSR", "SR-1",
                                "VSK-50" };
+string[] DESIGNATEDMARKSMANRIFLESArray = { "AK74 Scout", "G36C Scout", "416 Scout", "553 Scout", "TAVOR Scout", "M4A1 Scout", "MK17 Scout", "M4A1 SCT | Custom", "553 Scout | Sentinel", "AUG Scout", "SR-3M Scout", "SR-3M Scout | Surival", "Scorpio Scout | Quiet",
+                                           "Scorpio Scout", "SVD-63", "FRF2", "G28", "G28 | Wilderness", "G28 Scout | Wolves", "MK14", "MK14 Assault | Brown", "MK14 | Termination", "G28 Scout", "MK14 Assault", "SVD-63 | Patchwork", "OTS-O3", "M110" };
+
+string[] GRENADELAUNCHERSArray = { "MGL", "MGL | Terminator", "MGL | Quantum" };
 string[] TACTICSArray = { "ASSAULT", "SHARPSHOOTER", "PANTHER", "FIELD MEDIC", "ENGINEER", "ECHELON", "PATHFINDER" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
@@ -236,6 +242,16 @@ while (Convert.ToInt32(input) != 0)
             int ASSAULTRIFLES = random.Next(0, 62);
             Console.WriteLine("Primary Weapon: " + ASSAULTRIFLESArray[ASSAULTRIFLES]);
         }
+        if (WEAPONTYPE == 1)
+        {
+            int LIGHTMACHINEGUNS = random.Next(0, 10);
+            Console.WriteLine("Primary Weapon: " + LIGHTMACHINEGUNSArray[LIGHTMACHINEGUNS]);
+        }
+        if (WEAPONTYPE == 2)
+        {
+            int SHOTGUNS = random.Next(0, 14);
+            Console.WriteLine("Primary Weapon: " + SHOTGUNSArray[SHOTGUNS]);
+        }
         if (WEAPONTYPE == 3)
         {
             int SUBMACHINEGUNS = random.Next(0, 22);
@@ -245,6 +261,16 @@ while (Convert.ToInt32(input) != 0)
         {
             int SNIPERRIFLES = random.Next(0, 18);
             Console.WriteLine("Primary Weapon: " + SNIPERRIFLESArray[SNIPERRIFLES]);
+        }
+        if (WEAPONTYPE == 5)
+        {
+            int DESIGNATEDMARKSMANRIFLES = random.Next(0, 27);
+            Console.WriteLine("Primary Weapon: " + DESIGNATEDMARKSMANRIFLESArray[DESIGNATEDMARKSMANRIFLES]);
+        }
+        if (WEAPONTYPE == 6)
+        {
+            int GRENADELAUNCHERS = random.Next(0, 3);
+            Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
         }
         int HANDGUNS = random.Next(0, 27);
         Console.WriteLine("Secondary Weapon: " + HANDGUNSArray[HANDGUNS]);
@@ -318,6 +344,16 @@ while (Convert.ToInt32(input) != 0)
         {
             int ASSAULTRIFLES = random.Next(0, 62);
             Console.WriteLine("Primary Weapon: " + ASSAULTRIFLESArray[ASSAULTRIFLES]);
+        }
+        if (WEAPONTYPE == 1)
+        {
+            int LIGHTMACHINEGUNS = random.Next(0, 10);
+            Console.WriteLine("Primary Weapon: " + LIGHTMACHINEGUNSArray[LIGHTMACHINEGUNS]);
+        }
+        if (WEAPONTYPE == 2)
+        {
+            int SHOTGUNS = random.Next(0, 14);
+            Console.WriteLine("Primary Weapon: " + SHOTGUNSArray[SHOTGUNS]);
         }
         if (WEAPONTYPE == 3)
         {
