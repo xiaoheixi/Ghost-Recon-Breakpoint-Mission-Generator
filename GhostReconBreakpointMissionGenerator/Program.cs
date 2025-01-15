@@ -52,6 +52,8 @@ string[] SMUGGLERCOVESArray = { "MAUNGA NUI PORT", "SPANISH FORTRESS", "CHECKPOI
                                 "AUROA MATERIALS DEPOSIT", "POLYMORPH MODELING", "FOXGLOVE STATION", "OLEANDER STATION", "CHECKPOINT TIGER ALPHA" };
 string[] SINKINGCOUNTRYArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS SAM SITE", "HARRIER SAM SITE", "SCHULZ HOMESTEAD", "RADAR STATION NORTH", "OSPREY SAM SITE", "CHECKPOINT TIGER GOLF", "BUNKER EDGEHOD NORTH", "ANTI-AIRCRAFT RUINS", "HOWARD PORT",
                                  "AMMUNITION DEPOT", "CHECKPOINT TIGER INDIA", "SPARROWHAWK SAM SITE", "SENTINEL CORP. LAND BASE", "CHECKPOINT TIGER JULIET", "CAMP TIGER", "EQUIPMENT DEPOT", "CHECKPOINT TIGER KILO", "RUSSELL HOMESTEAD", "BUNKER EDGEHOD SOUTH" };
+string[] WILDCOASTArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS SAM SITE", "HARRIER SAM SITE", "SCHULZ HOMESTEAD", "RADAR STATION NORTH", "OSPREY SAM SITE", "CHECKPOINT TIGER GOLF", "BUNKER EDGEHOD NORTH", "ANTI-AIRCRAFT RUINS", "HOWARD PORT",
+                            "AMMUNITION DEPOT", "CHECKPOINT TIGER INDIA", "SPARROWHAWK SAM SITE", "SENTINEL CORP. LAND BASE", "CHECKPOINT TIGER JULIET", "CAMP TIGER", "EQUIPMENT DEPOT", "CHECKPOINT TIGER KILO", "RUSSELL HOMESTEAD", "BUNKER EDGEHOD SOUTH" };
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
                         "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon." };
@@ -330,6 +332,12 @@ while (Convert.ToInt32(input) != 0)
             int SINKINGCOUNTRY = random.Next(0, 21);
             Console.WriteLine(SINKINGCOUNTRYArray[SINKINGCOUNTRY]);
         }
+        if (province == 7)
+        {
+            int WILDCOAST = random.Next(0, 21);
+            Console.WriteLine(WILDCOASTArray[WILDCOAST]);
+        }
+        
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         OBJECTIVES = random.Next(0, 16);
