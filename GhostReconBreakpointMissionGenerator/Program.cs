@@ -78,7 +78,7 @@ string[] SUBMACHINEGUNSArray = { "MP5", "MP7", "MPX", "MPX Tactical", "P90", "Fl
                                  "Echelon SMG", "Echelon SMG | Custom", "UMP CQC", "Honey Badger", "Honey Badger | Brown" };
 string[] SNIPERRIFLESArray = { "TAC50", "HTI", "L115A3", "M82", "Zastava M93", "Recon-A1", "Scorpio", "HTI | Survival", "TAC50 | Brown", "Paladin 9 SNR", "M82 | Cerberus", "Paladin 9 SNR | Survival", "HTI | Brown", "M82 | Survival", "TAC50 | Wolves", "MSR", "SR-1",
                                "VSK-50" };
-string[] DESIGNATEDMARKSMANRIFLESArray = { "AK74 Scout", "G36C Scout", "416 Scout", "553 Scout", "TAVOR Scout", "M4A1 Scout", "MK17 Scout", "M4A1 SCT | Custom", "553 Scout | Sentinel", "AUG Scout", "SR-3M Scout", "SR-3M Scout | Surival", "Scorpio Scout | Quiet",
+string[] DESIGNATEDMARKSMANRIFLESArray = { "AK74 Scout", "G36C Scout", "416 Scout", "553 Scout", "TAVOR Scout", "M4A1 Scout", "MK17 Scout", "M4A1 SCT | Custom", "553 Scout | Sentinel", "AUG Scout", "SR-3M Scout", "SR-3M Scout | Survival", "Scorpio Scout | Quiet",
                                            "Scorpio Scout", "SVD-63", "FRF2", "G28", "G28 | Wilderness", "G28 Scout | Wolves", "MK14", "MK14 Assault | Brown", "MK14 | Termination", "G28 Scout", "MK14 Assault", "SVD-63 | Patchwork", "OTS-O3", "M110" };
 
 string[] GRENADELAUNCHERSArray = { "MGL", "MGL | Terminator", "MGL | Quantum" };
