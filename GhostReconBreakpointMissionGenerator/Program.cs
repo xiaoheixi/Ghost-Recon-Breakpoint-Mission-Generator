@@ -49,16 +49,17 @@ string[] SECTOR02Array = { "CAMP SALAMANDER", "CAMP PHOENIX", "FORGOTTEN SANCTUA
 string[] CAPENORTHArray = { "A.I. EXPERIMENTAL CENTER", "DRIFTWOOD ISLETS TESTING ZONE", "CAMPUS RELAY STATION", "CAMPUS DATA FARM", "UNDERWATER CABLE STATION", "CONSTRUCTION SITE", "SKELL FOUNDATION CAMPUS", "DARKWOOD ISLAND PORT" };
 string[] DRIFTWOODISLETSArray = { "DRIFTWOOD ISLETS TESTING ZONE", "CAMP KODIAK" };
 string[] SMUGGLERCOVESArray = { "MAUNGA NUI PORT", "SPANISH FORTRESS", "CHECKPOINT TIGER CHARLIE", "SMUGGLER COVES FREIGHT YARD", "CHECKPOINT TIGER BRAVO", "COMPOSITE FACTORY", "CHECKPOINT TIGER DELTA", "DRONE STATION W011", "OUTPOST RED TIGER", "WIND FARM W01",
-                                "AUROA MATERIALS DEPOSIT", "POLYMORPH MODELING", "FOXGLOVE STATION", "OLEANDER STATION", "CHECKPOINT TIGER ALPHA" };
+                                "AUROA MATERIALS DEPOSIT", "POLYMORPH MODELING", "FOXGLOVE STATION", "OLEANDER STATION", "CHECKPOINT TIGER ALPHA", "EMERGENCY CENTER" };
 string[] SINKINGCOUNTRYArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS SAM SITE", "HARRIER SAM SITE", "SCHULZ HOMESTEAD", "RADAR STATION NORTH", "OSPREY SAM SITE", "CHECKPOINT TIGER GOLF", "BUNKER EDGEHOD NORTH", "ANTI-AIRCRAFT RUINS", "HOWARD PORT",
                                  "AMMUNITION DEPOT", "CHECKPOINT TIGER INDIA", "SPARROWHAWK SAM SITE", "SENTINEL CORP. LAND BASE", "CHECKPOINT TIGER JULIET", "CAMP TIGER", "EQUIPMENT DEPOT", "CHECKPOINT TIGER KILO", "RUSSELL HOMESTEAD", "BUNKER EDGEHOD SOUTH" };
 string[] WILDCOASTArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS SAM SITE", "HARRIER SAM SITE", "SCHULZ HOMESTEAD", "RADAR STATION NORTH", "OSPREY SAM SITE", "CHECKPOINT TIGER GOLF", "BUNKER EDGEHOD NORTH", "ANTI-AIRCRAFT RUINS", "HOWARD PORT",
                             "AMMUNITION DEPOT", "CHECKPOINT TIGER INDIA", "SPARROWHAWK SAM SITE", "SENTINEL CORP. LAND BASE", "CHECKPOINT TIGER JULIET", "CAMP TIGER", "EQUIPMENT DEPOT", "CHECKPOINT TIGER KILO", "RUSSELL HOMESTEAD", "BUNKER EDGEHOD SOUTH" };
+string[] MOUNTHODGSONArray = { "CHEM-EXTRACTION COMPLEX", "BALD PEAK MINE", "SILENT VALLEY MINE", "DRONE STATION W041", "CHECKPOINT TIGER ECHO" };
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
                         "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon." };
 string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
-                    "The map is disabled.", "Players cannot pickup or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
+                    "The map is disabled.", "Players cannot pick up or use enemy weapons", "Headshots only.", "Dying in co-op resets the mission.", "Sniper rifles only.", "No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
                     "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
 string[] GEARSCOREArray = { "On", "Off" };
 string[] WEAPONTYPEArray = { "ASSAULT RIFLES", "LIGHT MACHINE GUNS", "SHOTGUNS", "SUBMACHINE GUNS", "SNIPER RIFLES", "DESIGNATED MARKSMAN RIFLES", "GRENADE LAUNCHERS", "None" };
@@ -324,7 +325,7 @@ while (Convert.ToInt32(input) != 0)
         }
         if (province == 5)
         {
-            int SMUGGLERCOVES = random.Next(0, 15);
+            int SMUGGLERCOVES = random.Next(0, 16);
             Console.WriteLine(SMUGGLERCOVESArray[SMUGGLERCOVES]);
         }
         if (province == 6)
@@ -337,7 +338,11 @@ while (Convert.ToInt32(input) != 0)
             int WILDCOAST = random.Next(0, 21);
             Console.WriteLine(WILDCOASTArray[WILDCOAST]);
         }
-        
+        if (province == 8)
+        {
+            int MOUNTHODGSON = random.Next(0, 5);
+            Console.WriteLine(MOUNTHODGSONArray[MOUNTHODGSON]);
+        }
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         OBJECTIVES = random.Next(0, 16);
