@@ -55,6 +55,8 @@ string[] SINKINGCOUNTRYArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS
 string[] WILDCOASTArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS SAM SITE", "HARRIER SAM SITE", "SCHULZ HOMESTEAD", "RADAR STATION NORTH", "OSPREY SAM SITE", "CHECKPOINT TIGER GOLF", "BUNKER EDGEHOD NORTH", "ANTI-AIRCRAFT RUINS", "HOWARD PORT",
                             "AMMUNITION DEPOT", "CHECKPOINT TIGER INDIA", "SPARROWHAWK SAM SITE", "SENTINEL CORP. LAND BASE", "CHECKPOINT TIGER JULIET", "CAMP TIGER", "EQUIPMENT DEPOT", "CHECKPOINT TIGER KILO", "RUSSELL HOMESTEAD", "BUNKER EDGEHOD SOUTH" };
 string[] MOUNTHODGSONArray = { "CHEM-EXTRACTION COMPLEX", "BALD PEAK MINE", "SILENT VALLEY MINE", "DRONE STATION W041", "CHECKPOINT TIGER ECHO" };
+string[] FENBOGArray = { "AIRSHIP AIR STATION", "WHITESTONE FARM", "ANCIENT RUINS", "SHIPPING CENTER", "LONGFORD FARM", "DRONE STATION W052", "BEHEMOTH DEFENSE AREA", "ANDERSONS FARM", "CONTROL STATION TIGER 02", "CHECKPOINT TIGER BRAVO", "CONTROL STATION TIGER 03",
+                         "HARRIS HOMESTEAD", "DRONE STATION W051", "BLUECORP STARTUP", "ANCIENT VILLAGE", "SUMMERS HOMESTEAD", "FEN BOG PORT", "PHOTOVOLTAIC PARK W01", "FEN BOG TESTING ZONE", "RECYCLING FACILITY" };
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
                         "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in biometric rooms to Erewhon." };
@@ -342,6 +344,11 @@ while (Convert.ToInt32(input) != 0)
         {
             int MOUNTHODGSON = random.Next(0, 5);
             Console.WriteLine(MOUNTHODGSONArray[MOUNTHODGSON]);
+        }
+        if (province == 9)
+        {
+            int FENBOG = random.Next(0, 19);
+            Console.WriteLine(FENBOGArray[FENBOG]);
         }
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
