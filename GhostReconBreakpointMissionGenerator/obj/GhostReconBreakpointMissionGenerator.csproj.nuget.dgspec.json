@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/codyowlbane/Ghost-Recon-Breakpoint-Mission-Generator/GhostReconBreakpointMissionGenerator/GhostReconBreakpointMissionGenerator.csproj": {}
+    "C:\\Users\\justi\\OneDrive\\Documents\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj": {}
   },
   "projects": {
-    "/Users/codyowlbane/Ghost-Recon-Breakpoint-Mission-Generator/GhostReconBreakpointMissionGenerator/GhostReconBreakpointMissionGenerator.csproj": {
+    "C:\\Users\\justi\\OneDrive\\Documents\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/codyowlbane/Ghost-Recon-Breakpoint-Mission-Generator/GhostReconBreakpointMissionGenerator/GhostReconBreakpointMissionGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Documents\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj",
         "projectName": "GhostReconBreakpointMissionGenerator",
-        "projectPath": "/Users/codyowlbane/Ghost-Recon-Breakpoint-Mission-Generator/GhostReconBreakpointMissionGenerator/GhostReconBreakpointMissionGenerator.csproj",
-        "packagesPath": "/Users/codyowlbane/.nuget/packages/",
-        "outputPath": "/Users/codyowlbane/Ghost-Recon-Breakpoint-Mission-Generator/GhostReconBreakpointMissionGenerator/obj/",
+        "projectPath": "C:\\Users\\justi\\OneDrive\\Documents\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\GhostReconBreakpointMissionGenerator.csproj",
+        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justi\\OneDrive\\Documents\\Ghost-Recon-Breakpoint-Mission-Generator\\GhostReconBreakpointMissionGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/codyowlbane/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
