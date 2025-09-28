@@ -2,3 +2,7 @@
 .vs/
 .dll/
 .pdb/
+GhostReconBreakpointMissionGenerator/obj/Debug/net9.0/GhostReconBreakpointMissionGenerator.AssemblyInfo.cs
+GhostReconBreakpointMissionGenerator/obj/Debug/net9.0/GhostReconBreakpointMissionGenerator.AssemblyInfoInputs.cache
+GhostReconBreakpointMissionGenerator/obj/Debug/net9.0/GhostReconBreakpointMissionGenerator.assets.cache
+GhostReconBreakpointMissionGenerator/obj/Debug/net9.0/GhostReconBreakpointMissionGenerator.GeneratedMSBuildEditorConfig.editorconfig
