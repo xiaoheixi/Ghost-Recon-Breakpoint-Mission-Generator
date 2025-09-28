@@ -242,7 +242,7 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
-        int SKULLS = random.Next(0, 15);
+        int SKULLS = random.Next(0, 18);
         Console.WriteLine(SKULLSArray[SKULLS]);
         int GEARSCORE = random.Next(0, 2);
         Console.WriteLine("Gear Score: " + GEARSCOREArray[GEARSCORE]);
@@ -360,7 +360,7 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
         OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
-        int SKULLS = random.Next(0, 15);
+        int SKULLS = random.Next(0, 18);
         Console.WriteLine(SKULLSArray[SKULLS]);
         int GEARSCORE = random.Next(0, 2);
         Console.WriteLine("Gear Score: " + GEARSCOREArray[GEARSCORE]);
