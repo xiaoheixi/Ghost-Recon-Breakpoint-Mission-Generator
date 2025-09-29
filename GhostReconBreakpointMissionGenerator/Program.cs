@@ -63,7 +63,7 @@ string[] OBJECTIVESArray = { "Neutralise all hostiles.", "(Tier 1) Stay undetect
                         "Steal enemy vehicles.", "Return the information in the biometric rooms to Erewhon." };
 string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
                     "The map is disabled.", "(Tier 3) Players cannot pick up or use enemy weapons.", "Headshots only.", "Dying in co-op resets the mission.", "(Tier 2) Sniper rifles only.", "(Tier 1) No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
-                    "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
+                    "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "(Tier 3) No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
 string[] GEARSCOREArray = { "On", "Off" };
 string[] WEAPONTYPEArray = { "ASSAULT RIFLES", "LIGHT MACHINE GUNS", "SHOTGUNS", "SUBMACHINE GUNS", "SNIPER RIFLES", "DESIGNATED MARKSMAN RIFLES", "GRENADE LAUNCHERS", "None" };
 string[] ITEMWHEELArray = { "AGILITY RATION", "BINOCULARS", "BREACH TORCH", "C4 CHARGE MK.1", "C4 CHARGE MK.2", "DEXTERITY RATION ADVANCED", "DEXTERITY RATION BASIC", "DEXTERITY RATION EXTREME", "DIV. LURE", "EMP GRENADE MK.1", "EMP GRENADE MK.2", "EMP GRENADE MK.3",
