@@ -61,7 +61,7 @@ string[] FENBOGArray = { "AIRSHIP AIR STATION", "WHITESTONE FARM", "ANCIENT RUIN
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "(Tier 1) Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
                         "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in the biometric rooms to Erewhon." };
-string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features disabled for all weapons.",
+string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features are disabled for all weapons.",
                     "The map is disabled.", "(Tier 3) Players cannot pick up or use enemy weapons.", "(Tier 1) Headshots only.", "Dying in co-op resets the mission.", "(Tier 2) Sniper rifles only.", "(Tier 1) No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
                     "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "(Tier 3) No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
 string[] GEARSCOREArray = { "On", "Off" };
