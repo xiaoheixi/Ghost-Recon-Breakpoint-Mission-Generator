@@ -58,8 +58,10 @@ string[] WILDCOASTArray = { "ANCIENT HARBOR", "HOWARD AIRFIELD", "CARACARAS SAM 
 string[] MOUNTHODGSONArray = { "CHEM-EXTRACTION COMPLEX", "BALD PEAK MINE", "SILENT VALLEY MINE", "DRONE STATION W041", "CHECKPOINT TIGER ECHO" };
 string[] FENBOGArray = { "AIRSHIP AIR STATION", "WHITESTONE FARM", "ANCIENT RUINS", "SHIPPING CENTER", "LONGFORD FARM", "DRONE STATION W052", "BEHEMOTH DEFENSE AREA", "ANDERSONS FARM", "CONTROL STATION TIGER 02", "CHECKPOINT TIGER BRAVO", "CONTROL STATION TIGER 03",
                          "HARRIS HOMESTEAD", "DRONE STATION W051", "BLUECORP STARTUP", "ANCIENT VILLAGE", "SUMMERS HOMESTEAD", "FEN BOG PORT", "PHOTOVOLTAIC PARK W01", "FEN BOG TESTING ZONE", "RECYCLING FACILITY" };
+string[] NEWARGYLLArray = { "ANCIENT SACRED SITE", "CONTROL STATION TIGER 04", "SCOTT HOMESTEAD", "FISH PROCESSING CENTER", "ANCIENT FORT", "OUTPOST BLACK TIGER", "MEAL PACKAGING CENTER", "COLD STORAGE CENTER", "BROWN HOMESTEAD", "NEW ARGYLL WINERY",
+                              "BREWERY", "JUICE PROCESSING CENTER", "LONG VALLEY RESIDENCES", "SKELL ESTATE", "MURMUR PATROL AREA" };
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "(Tier 1) Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
-                        "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add tracker to enemy containers.",
+                        "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add a tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in the biometric rooms to Erewhon." };
 string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features are disabled for all weapons.",
                     "The map is disabled.", "(Tier 3) Players cannot pick up or use enemy weapons.", "(Tier 1) Headshots only.", "Dying in co-op resets the mission.", "(Tier 2) Sniper rifles only.", "(Tier 1) No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
@@ -355,6 +357,11 @@ while (Convert.ToInt32(input) != 0)
         {
             int FENBOG = random.Next(0, 19);
             Console.WriteLine(FENBOGArray[FENBOG]);
+        }
+        if (province == 10)
+        {
+            int NEWARGYLL = random.Next(0, 15);
+            Console.WriteLine(NEWARGYLLArray[NEWARGYLL]);
         }
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);

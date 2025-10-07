@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GhostReconBreakpointMissionGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3617015f6a72e7b8589703223ca5e65f5fba065b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+192936408246c9aa0746fb1b99dec4414be08bf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("GhostReconBreakpointMissionGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GhostReconBreakpointMissionGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
