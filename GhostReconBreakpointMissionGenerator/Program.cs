@@ -93,6 +93,7 @@ Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
 Console.WriteLine("Enter 2 to randomly generate a base.");
+Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
 Console.WriteLine("Enter 0 to exit");
 string input = Console.ReadLine();
 while (Convert.ToInt32(input) != 0)
@@ -416,6 +417,135 @@ while (Convert.ToInt32(input) != 0)
         {
             continue;
         }
+    } else if (Convert.ToInt32(input) == 3)
+    {
+        Console.WriteLine("Fixit");
+        int WEAPONTYPEFixit = random.Next(0, 8);
+        Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEFixit]);
+        if (WEAPONTYPEFixit == 0)
+        {
+            int ASSAULTRIFLES = random.Next(0, 62);
+            Console.WriteLine("Primary Weapon: " + ASSAULTRIFLESArray[ASSAULTRIFLES]);
+        }
+        if (WEAPONTYPEFixit == 1)
+        {
+            int LIGHTMACHINEGUNS = random.Next(0, 10);
+            Console.WriteLine("Primary Weapon: " + LIGHTMACHINEGUNSArray[LIGHTMACHINEGUNS]);
+        }
+        if (WEAPONTYPEFixit == 2)
+        {
+            int SHOTGUNS = random.Next(0, 14);
+            Console.WriteLine("Primary Weapon: " + SHOTGUNSArray[SHOTGUNS]);
+        }
+        if (WEAPONTYPEFixit == 3)
+        {
+            int SUBMACHINEGUNS = random.Next(0, 22);
+            Console.WriteLine("Primary Weapon: " + SUBMACHINEGUNSArray[SUBMACHINEGUNS]);
+        }
+        if (WEAPONTYPEFixit == 4)
+        {
+            int SNIPERRIFLES = random.Next(0, 18);
+            Console.WriteLine("Primary Weapon: " + SNIPERRIFLESArray[SNIPERRIFLES]);
+        }
+        if (WEAPONTYPEFixit == 5)
+        {
+            int DESIGNATEDMARKSMANRIFLES = random.Next(0, 27);
+            Console.WriteLine("Primary Weapon: " + DESIGNATEDMARKSMANRIFLESArray[DESIGNATEDMARKSMANRIFLES]);
+        }
+        if (WEAPONTYPEFixit == 6)
+        {
+            int GRENADELAUNCHERS = random.Next(0, 3);
+            Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
+        }
+        Console.WriteLine("Fury");
+        int WEAPONTYPEFury = random.Next(0, 8);
+        Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEFury]);
+        if (WEAPONTYPEFury == 0)
+        {
+            int ASSAULTRIFLES = random.Next(0, 62);
+            Console.WriteLine("Primary Weapon: " + ASSAULTRIFLESArray[ASSAULTRIFLES]);
+        }
+        if (WEAPONTYPEFury == 1)
+        {
+            int LIGHTMACHINEGUNS = random.Next(0, 10);
+            Console.WriteLine("Primary Weapon: " + LIGHTMACHINEGUNSArray[LIGHTMACHINEGUNS]);
+        }
+        if (WEAPONTYPEFury == 2)
+        {
+            int SHOTGUNS = random.Next(0, 14);
+            Console.WriteLine("Primary Weapon: " + SHOTGUNSArray[SHOTGUNS]);
+        }
+        if (WEAPONTYPEFury == 3)
+        {
+            int SUBMACHINEGUNS = random.Next(0, 22);
+            Console.WriteLine("Primary Weapon: " + SUBMACHINEGUNSArray[SUBMACHINEGUNS]);
+        }
+        if (WEAPONTYPEFury == 4)
+        {
+            int SNIPERRIFLES = random.Next(0, 18);
+            Console.WriteLine("Primary Weapon: " + SNIPERRIFLESArray[SNIPERRIFLES]);
+        }
+        if (WEAPONTYPEFury == 5)
+        {
+            int DESIGNATEDMARKSMANRIFLES = random.Next(0, 27);
+            Console.WriteLine("Primary Weapon: " + DESIGNATEDMARKSMANRIFLESArray[DESIGNATEDMARKSMANRIFLES]);
+        }
+        if (WEAPONTYPEFury == 6)
+        {
+            int GRENADELAUNCHERS = random.Next(0, 3);
+            Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
+        }
+        Console.WriteLine("Vasily");
+        int WEAPONTYPEVasily = random.Next(0, 8);
+        Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEVasily]);
+        if (WEAPONTYPEVasily == 0)
+        {
+            int ASSAULTRIFLES = random.Next(0, 62);
+            Console.WriteLine("Primary Weapon: " + ASSAULTRIFLESArray[ASSAULTRIFLES]);
+        }
+        if (WEAPONTYPEVasily == 1)
+        {
+            int LIGHTMACHINEGUNS = random.Next(0, 10);
+            Console.WriteLine("Primary Weapon: " + LIGHTMACHINEGUNSArray[LIGHTMACHINEGUNS]);
+        }
+        if (WEAPONTYPEVasily == 2)
+        {
+            int SHOTGUNS = random.Next(0, 14);
+            Console.WriteLine("Primary Weapon: " + SHOTGUNSArray[SHOTGUNS]);
+        }
+        if (WEAPONTYPEVasily == 3)
+        {
+            int SUBMACHINEGUNS = random.Next(0, 22);
+            Console.WriteLine("Primary Weapon: " + SUBMACHINEGUNSArray[SUBMACHINEGUNS]);
+        }
+        if (WEAPONTYPEVasily == 4)
+        {
+            int SNIPERRIFLES = random.Next(0, 18);
+            Console.WriteLine("Primary Weapon: " + SNIPERRIFLESArray[SNIPERRIFLES]);
+        }
+        if (WEAPONTYPEVasily == 5)
+        {
+            int DESIGNATEDMARKSMANRIFLES = random.Next(0, 27);
+            Console.WriteLine("Primary Weapon: " + DESIGNATEDMARKSMANRIFLESArray[DESIGNATEDMARKSMANRIFLES]);
+        }
+        if (WEAPONTYPEVasily == 6)
+        {
+            int GRENADELAUNCHERS = random.Next(0, 3);
+            Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
+        }
+        Console.WriteLine("Enter 1 for an in game mission.");
+        Console.WriteLine("Enter 2 if you would like a different base.");
+        Console.WriteLine("Enter 0 to exit.");
+        input = Console.ReadLine();
+        if (Convert.ToInt32(input) == 0)
+        {
+            continue;
+        }
+    }
+     else
+    {
+        Console.WriteLine("Invalid input. Please enter 1, 2, or 3 to generate a mission, base, or AI loadout respectively. Enter 0 to exit.");
+        input = Console.ReadLine();
     }
 }
 Console.WriteLine("Thanks for using the Ghost Recon Breakpoint Mission Generator created by Justin Zhao");
