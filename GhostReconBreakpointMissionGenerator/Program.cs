@@ -457,7 +457,7 @@ while (Convert.ToInt32(input) != 0)
             int GRENADELAUNCHERS = random.Next(0, 3);
             Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
         }
-        Console.WriteLine("Fury");
+        Console.WriteLine("\nFury");
         int WEAPONTYPEFury = random.Next(0, 8);
         Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEFury]);
         if (WEAPONTYPEFury == 0)
@@ -495,7 +495,7 @@ while (Convert.ToInt32(input) != 0)
             int GRENADELAUNCHERS = random.Next(0, 3);
             Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
         }
-        Console.WriteLine("Vasily");
+        Console.WriteLine("\nVasily");
         int WEAPONTYPEVasily = random.Next(0, 8);
         Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEVasily]);
         if (WEAPONTYPEVasily == 0)
