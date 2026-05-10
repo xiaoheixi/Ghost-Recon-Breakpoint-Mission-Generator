@@ -89,11 +89,13 @@ string[] DESIGNATEDMARKSMANRIFLESArray = { "AK74 Scout", "G36C Scout", "416 Scou
 
 string[] GRENADELAUNCHERSArray = { "MGL", "MGL | Terminator", "MGL | Quantum" };
 string[] TACTICSArray = { "ASSAULT", "SHARPSHOOTER", "PANTHER", "FIELD MEDIC", "ENGINEER", "ECHELON", "PATHFINDER" };
+string[] OPERATIONSArray = { "OPERATION ANTIDOTE" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
 Console.WriteLine("Enter 2 to randomly generate a base.");
 Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
+Console.WriteLine("Enter 4 to randomly generate an operation.");
 Console.WriteLine("Enter 0 to exit");
 string input = Console.ReadLine();
 while (Convert.ToInt32(input) != 0)
@@ -420,7 +422,7 @@ while (Convert.ToInt32(input) != 0)
     } else if (Convert.ToInt32(input) == 3)
     {
         Console.WriteLine("Fixit");
-        int WEAPONTYPEFixit = random.Next(0, 8);
+        int WEAPONTYPEFixit = random.Next(0, 6);
         Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEFixit]);
         if (WEAPONTYPEFixit == 0)
         {
@@ -452,13 +454,8 @@ while (Convert.ToInt32(input) != 0)
             int DESIGNATEDMARKSMANRIFLES = random.Next(0, 27);
             Console.WriteLine("Primary Weapon: " + DESIGNATEDMARKSMANRIFLESArray[DESIGNATEDMARKSMANRIFLES]);
         }
-        if (WEAPONTYPEFixit == 6)
-        {
-            int GRENADELAUNCHERS = random.Next(0, 3);
-            Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
-        }
         Console.WriteLine("\nFury");
-        int WEAPONTYPEFury = random.Next(0, 8);
+        int WEAPONTYPEFury = random.Next(0, 6);
         Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEFury]);
         if (WEAPONTYPEFury == 0)
         {
@@ -490,13 +487,8 @@ while (Convert.ToInt32(input) != 0)
             int DESIGNATEDMARKSMANRIFLES = random.Next(0, 27);
             Console.WriteLine("Primary Weapon: " + DESIGNATEDMARKSMANRIFLESArray[DESIGNATEDMARKSMANRIFLES]);
         }
-        if (WEAPONTYPEFury == 6)
-        {
-            int GRENADELAUNCHERS = random.Next(0, 3);
-            Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
-        }
         Console.WriteLine("\nVasily");
-        int WEAPONTYPEVasily = random.Next(0, 8);
+        int WEAPONTYPEVasily = random.Next(0, 6);
         Console.WriteLine("Primary Weapon Type: " + WEAPONTYPEArray[WEAPONTYPEVasily]);
         if (WEAPONTYPEVasily == 0)
         {
@@ -528,13 +520,24 @@ while (Convert.ToInt32(input) != 0)
             int DESIGNATEDMARKSMANRIFLES = random.Next(0, 27);
             Console.WriteLine("Primary Weapon: " + DESIGNATEDMARKSMANRIFLESArray[DESIGNATEDMARKSMANRIFLES]);
         }
-        if (WEAPONTYPEVasily == 6)
-        {
-            int GRENADELAUNCHERS = random.Next(0, 3);
-            Console.WriteLine("Primary Weapon: " + GRENADELAUNCHERSArray[GRENADELAUNCHERS]);
-        }
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
+        Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
+        Console.WriteLine("Enter 0 to exit.");
+        input = Console.ReadLine();
+        if (Convert.ToInt32(input) == 0)
+        {
+            continue;
+        }
+    } else if (Convert.ToInt32(input) == 4)
+    {
+        int OPERATIONS = random.Next(0, 1);
+        Console.WriteLine(OPERATIONSArray[OPERATIONS]);
+        Console.WriteLine("https://drive.google.com/file/d/1cmi0xQMCENAAcrXfRGDFRXPt2VIKF7ZF/view?usp=sharing");
+        Console.WriteLine("Enter 1 for an in game mission.");
+        Console.WriteLine("Enter 2 if you would like a different base.");
+        Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
+        Console.WriteLine("Enter 4 to randomly generate an operation.");
         Console.WriteLine("Enter 0 to exit.");
         input = Console.ReadLine();
         if (Convert.ToInt32(input) == 0)
