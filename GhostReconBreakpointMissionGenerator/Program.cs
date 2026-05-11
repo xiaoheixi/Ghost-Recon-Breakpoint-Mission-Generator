@@ -1,6 +1,6 @@
 ﻿Random random = new Random();
 string[] typeArray = { "EPISODE 1", "EPISODE 2", "EPISODE 3", "HARUHI ITO", "A LONG ROAD TO VICTORY", "MADS SCHULZ", "STAYING SAFE", "OPERATION AMBER SKY", "RESISTANCE",
-                       "OPERATION MOTHERLAND", "OPERATION SILVERSTONE", "OPERATION FIRST STRIKE" };
+                       "OPERATION MOTHERLAND", "OPERATION SILVERSTONE", "OPERATION FIRST STRIKE", "CLASSIFIED OPERATIONS" };
 string[] EPISODE1Array = { "OPERATION GREENSTONE", "LTC. COLE D. WALKER", "JACE SKELL", "MAURICE FOX", "AUROA ARCHIPELAGO", "FLYCATCHER", "ROSEBUD", "PAULA MADERA",
                            "CHRISTINA CROMWELL", "SILVERBACK", "CARL CHISUM", "AYANA PURI" };
 string[] OPERATIONGREENSTONEArray = { "NO WAY OUT", "EAGLES DOWN" };
@@ -89,7 +89,7 @@ string[] DESIGNATEDMARKSMANRIFLESArray = { "AK74 Scout", "G36C Scout", "416 Scou
 
 string[] GRENADELAUNCHERSArray = { "MGL", "MGL | Terminator", "MGL | Quantum" };
 string[] TACTICSArray = { "ASSAULT", "SHARPSHOOTER", "PANTHER", "FIELD MEDIC", "ENGINEER", "ECHELON", "PATHFINDER" };
-string[] OPERATIONSArray = { "OPERATION ANTIDOTE" };
+string[] OPERATIONSArray = { "OPERATION ANTIDOTE\nhttps://drive.google.com/file/d/1cmi0xQMCENAAcrXfRGDFRXPt2VIKF7ZF/view?usp=sharing", "OPERATION BACKHAND\nhttps://drive.google.com/file/d/1nK0RsB9GLIqiKirSZgUbf_CC8T9eN1IJ/view?usp=sharing" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -102,7 +102,7 @@ while (Convert.ToInt32(input) != 0)
 {
     if(Convert.ToInt32(input) == 1)
     {
-        int type = random.Next(0, 12);
+        int type = random.Next(0, 13);
         Console.WriteLine(typeArray[type]);
         if (type == 0)
         {
@@ -242,6 +242,11 @@ while (Convert.ToInt32(input) != 0)
         {
             int OPERATIONFIRSTSTRIKEMISSIONS = random.Next(0, 4);
             Console.WriteLine(OPERATIONFIRSTSTRIKEMISSIONSArray[OPERATIONFIRSTSTRIKEMISSIONS]);
+        }
+        else if (type == 12)
+        {
+            int OPERATIONS = random.Next(0, 2);
+            Console.WriteLine(OPERATIONSArray[OPERATIONS]);
         }
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
