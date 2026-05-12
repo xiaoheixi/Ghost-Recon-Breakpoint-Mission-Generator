@@ -90,7 +90,7 @@ string[] DESIGNATEDMARKSMANRIFLESArray = { "AK74 Scout", "G36C Scout", "416 Scou
 string[] GRENADELAUNCHERSArray = { "MGL", "MGL | Terminator", "MGL | Quantum" };
 string[] TACTICSArray = { "ASSAULT", "SHARPSHOOTER", "PANTHER", "FIELD MEDIC", "ENGINEER", "ECHELON", "PATHFINDER" };
 string[] OPERATIONSArray = { "OPERATION ANTIDOTE" };
-string[] AuroaSpecialForces1stSFGArray = { "OPERATION ANTIDOTE\nhttps://drive.google.com/file/d/1cmi0xQMCENAAcrXfRGDFRXPt2VIKF7ZF/view?usp=sharing", "OPERATION BACKHAND\nhttps://drive.google.com/file/d/1nK0RsB9GLIqiKirSZgUbf_CC8T9eN1IJ/view?usp=sharing" };
+string[] AuroaSpecialForces1stSFGArray = { "OPERATION ANTIDOTE\nhttps://drive.google.com/file/d/1cmi0xQMCENAAcrXfRGDFRXPt2VIKF7ZF/view?usp=sharing", "OPERATION BACKHAND\nhttps://drive.google.com/file/d/1nK0RsB9GLIqiKirSZgUbf_CC8T9eN1IJ/view?usp=sharing", "OPERATION BASALT\nhttps://drive.google.com/file/d/1v65jPqB55uL3DzSIExz4P3qC6407nKpR/view?usp=sharing" };
 string[] SpecialOperationsActionRegimentArray = { "Operation Hunter Killer\nhttps://docs.google.com/document/d/1t_O3w1vSUm3seQxM0o-8iOarJv0B4MZVUHTo809IxX8/edit?usp=sharing", "Operation Santa´s little helper\nhttps://docs.google.com/document/d/1leFlHbElQ_tkFrWM0GQETzFc1j3HiPpk4NumezYxNTk/edit?usp=sharing" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
@@ -247,7 +247,7 @@ while (Convert.ToInt32(input) != 0)
         }
         else if (type == 12)
         {
-            int AuroaSpecialForces1stSFGArrayOperation = random.Next(0, 1);
+            int AuroaSpecialForces1stSFGArrayOperation = random.Next(0, 3);
             Console.WriteLine(AuroaSpecialForces1stSFGArray[AuroaSpecialForces1stSFGArrayOperation]);
         }
         else if (type == 13)
