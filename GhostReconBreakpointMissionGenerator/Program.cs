@@ -1,6 +1,6 @@
 ﻿Random random = new Random();
 string[] typeArray = { "EPISODE 1", "EPISODE 2", "EPISODE 3", "HARUHI ITO", "A LONG ROAD TO VICTORY", "MADS SCHULZ", "STAYING SAFE", "OPERATION AMBER SKY", "RESISTANCE",
-                       "OPERATION MOTHERLAND", "OPERATION SILVERSTONE", "OPERATION FIRST STRIKE", "Auroa Special Forces 1st SFG" };
+                       "OPERATION MOTHERLAND", "OPERATION SILVERSTONE", "OPERATION FIRST STRIKE", "Auroa Special Forces 1st SFG", "Special Operations Action Regiment" };
 string[] EPISODE1Array = { "OPERATION GREENSTONE", "LTC. COLE D. WALKER", "JACE SKELL", "MAURICE FOX", "AUROA ARCHIPELAGO", "FLYCATCHER", "ROSEBUD", "PAULA MADERA",
                            "CHRISTINA CROMWELL", "SILVERBACK", "CARL CHISUM", "AYANA PURI" };
 string[] OPERATIONGREENSTONEArray = { "NO WAY OUT", "EAGLES DOWN" };
@@ -91,6 +91,7 @@ string[] GRENADELAUNCHERSArray = { "MGL", "MGL | Terminator", "MGL | Quantum" };
 string[] TACTICSArray = { "ASSAULT", "SHARPSHOOTER", "PANTHER", "FIELD MEDIC", "ENGINEER", "ECHELON", "PATHFINDER" };
 string[] OPERATIONSArray = { "OPERATION ANTIDOTE" };
 string[] AuroaSpecialForces1stSFGArray = { "OPERATION ANTIDOTE\nhttps://drive.google.com/file/d/1cmi0xQMCENAAcrXfRGDFRXPt2VIKF7ZF/view?usp=sharing", "OPERATION BACKHAND\nhttps://drive.google.com/file/d/1nK0RsB9GLIqiKirSZgUbf_CC8T9eN1IJ/view?usp=sharing" };
+string[] SpecialOperationsActionRegimentArray = { "Operation Hunter Killer\nhttps://docs.google.com/document/d/1t_O3w1vSUm3seQxM0o-8iOarJv0B4MZVUHTo809IxX8/edit?usp=sharing", "Operation Santa´s little helper\nhttps://docs.google.com/document/d/1leFlHbElQ_tkFrWM0GQETzFc1j3HiPpk4NumezYxNTk/edit?usp=sharing" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -103,7 +104,7 @@ while (Convert.ToInt32(input) != 0)
 {
     if(Convert.ToInt32(input) == 1)
     {
-        int type = random.Next(0, 13);
+        int type = random.Next(0, 14);
         Console.WriteLine(typeArray[type]);
         if (type == 0)
         {
@@ -246,8 +247,13 @@ while (Convert.ToInt32(input) != 0)
         }
         else if (type == 12)
         {
-            int AuroaSpecialForces1stSFGArrayOperation = random.Next(0, 2);
+            int AuroaSpecialForces1stSFGArrayOperation = random.Next(0, 1);
             Console.WriteLine(AuroaSpecialForces1stSFGArray[AuroaSpecialForces1stSFGArrayOperation]);
+        }
+        else if (type == 13)
+        {
+            int SpecialOperationsActionRegimentArrayOperation = random.Next(0, 2);
+            Console.WriteLine(SpecialOperationsActionRegimentArray[SpecialOperationsActionRegimentArrayOperation]);
         }
         int OBJECTIVES = random.Next(0, 16);
         Console.WriteLine(OBJECTIVESArray[OBJECTIVES]);
