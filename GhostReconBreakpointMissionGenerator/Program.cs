@@ -91,7 +91,7 @@ string[] GRENADELAUNCHERSArray = { "MGL", "MGL | Terminator", "MGL | Quantum" };
 string[] TACTICSArray = { "ASSAULT", "SHARPSHOOTER", "PANTHER", "FIELD MEDIC", "ENGINEER", "ECHELON", "PATHFINDER" };
 string[] OPERATIONSArray = { "OPERATION ANTIDOTE" };
 string[] AuroaSpecialForces1stSFGArray = { "OPERATION ANTIDOTE\nhttps://drive.google.com/file/d/1cmi0xQMCENAAcrXfRGDFRXPt2VIKF7ZF/view?usp=sharing", "OPERATION BACKHAND\nhttps://drive.google.com/file/d/1nK0RsB9GLIqiKirSZgUbf_CC8T9eN1IJ/view?usp=sharing", "OPERATION BASALT\nhttps://drive.google.com/file/d/1v65jPqB55uL3DzSIExz4P3qC6407nKpR/view?usp=sharing" };
-string[] SpecialOperationsActionRegimentArray = { "Operation Hunter Killer\nhttps://docs.google.com/document/d/1t_O3w1vSUm3seQxM0o-8iOarJv0B4MZVUHTo809IxX8/edit?usp=sharing", "Operation Santa´s little helper\nhttps://docs.google.com/document/d/1leFlHbElQ_tkFrWM0GQETzFc1j3HiPpk4NumezYxNTk/edit?usp=sharing" };
+string[] SpecialOperationsActionRegimentArray = { "Operation Hunter Killer\nhttps://docs.google.com/document/d/1t_O3w1vSUm3seQxM0o-8iOarJv0B4MZVUHTo809IxX8/edit?usp=sharing", "Operation Santa´s little helper\nhttps://docs.google.com/document/d/1leFlHbElQ_tkFrWM0GQETzFc1j3HiPpk4NumezYxNTk/edit?usp=sharing", "Operation Pathfinder\nhttps://docs.google.com/document/d/1kaN2RMNvvMn2qP-noDUa64YHue3b0MuH8QGjCc75uek/edit?usp=sharing", "Operation Talon Copper\nhttps://docs.google.com/document/d/1N7n17KpmwwxuBivrz8uxo877h5PYUagi1A51zQa1VM4/edit?usp=sharing" };
 Console.WriteLine("Hello, Ghost!");
 Console.WriteLine("Welcome to Breakpoint Mission Generator created by Justin Zhao");
 Console.WriteLine("Enter 1 to randomly generate your in game mission.");
@@ -252,7 +252,7 @@ while (Convert.ToInt32(input) != 0)
         }
         else if (type == 13)
         {
-            int SpecialOperationsActionRegimentArrayOperation = random.Next(0, 2);
+            int SpecialOperationsActionRegimentArrayOperation = random.Next(0, 4);
             Console.WriteLine(SpecialOperationsActionRegimentArray[SpecialOperationsActionRegimentArrayOperation]);
         }
         int OBJECTIVES = random.Next(0, 16);
