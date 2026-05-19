@@ -63,7 +63,7 @@ string[] NEWARGYLLArray = { "ANCIENT SACRED SITE", "CONTROL STATION TIGER 04", "
 string[] OBJECTIVESArray = { "Neutralise all hostiles.", "(Tier 1) Stay undetected.", "Disable all S.A.M.S.", "Destroy all enemy vehicles.", "Eliminate the enemy HVTs.", "Interrogate enemy HVTs.", "Disable or destroy enemy mortars, turrets, helicopters and generators.",
                         "Capture an enemy HVT.", "Obtain any laptops and deliver them to Erewhon.", "Perform this mission during the night.", "Perform this mission during the day.", "Rescue captives.", "Destroy enemy antennas.", "Add a tracker to enemy containers.",
                         "Steal enemy vehicles.", "Return the information in the biometric rooms to Erewhon." };
-string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo", "Auto aim features are disabled for all weapons.",
+string[] SKULLSArray = { "You can only heal after you melee an enemy.", "HUD does not display on the screen.", "Ghost trades his Night Vision for Optical Camo.", "Auto aim features are disabled for all weapons.",
                     "The map is disabled.", "(Tier 3) Players cannot pick up or use enemy weapons.", "(Tier 1) Headshots only.", "Dying in co-op resets the mission.", "(Tier 2) Sniper rifles only.", "(Tier 1) No suppressors are allowed.", "No class items are allowed.", "No class techniques are allowed.",
                     "No drones are allowed.", "No voice communication is allowed.", "Optical Camo has been disabled.", "(Tier 3) No Primary Weapons.", "No Secondary Weapons.", "No Equipment Item Wheel." };
 string[] GEARSCOREArray = { "On", "Off" };
@@ -98,6 +98,7 @@ Console.WriteLine("Enter 1 to randomly generate your in game mission.");
 Console.WriteLine("Enter 2 to randomly generate a base.");
 Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
 Console.WriteLine("Enter 4 to randomly generate an operation.");
+Console.WriteLine("Enter 5 to randomly generate three skulls.");
 Console.WriteLine("Enter 0 to exit");
 string input = Console.ReadLine();
 while (Convert.ToInt32(input) != 0)
@@ -310,8 +311,11 @@ while (Convert.ToInt32(input) != 0)
         }
         int TACTICS = random.Next(0, 7);
         Console.WriteLine("TACTICS: " + TACTICSArray[TACTICS]);
-        Console.WriteLine("Enter 1 if you would like a different in game mission.");
-        Console.WriteLine("Enter 2 to randomly generate a base.");
+        Console.WriteLine("Enter 1 for an in game mission.");
+        Console.WriteLine("Enter 2 if you would like a different base.");
+        Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
+        Console.WriteLine("Enter 4 to randomly generate an operation.");
+        Console.WriteLine("Enter 5 to randomly generate three skulls.");
         Console.WriteLine("Enter 0 to exit.");
         input = Console.ReadLine();
         if (Convert.ToInt32(input) == 0)
@@ -425,6 +429,9 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine("TACTICS: " + TACTICSArray[TACTICS]);
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
+        Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
+        Console.WriteLine("Enter 4 to randomly generate an operation.");
+        Console.WriteLine("Enter 5 to randomly generate three skulls.");
         Console.WriteLine("Enter 0 to exit.");
         input = Console.ReadLine();
         if (Convert.ToInt32(input) == 0)
@@ -535,6 +542,8 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine("Enter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
         Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
+        Console.WriteLine("Enter 4 to randomly generate an operation.");
+        Console.WriteLine("Enter 5 to randomly generate three skulls.");
         Console.WriteLine("Enter 0 to exit.");
         input = Console.ReadLine();
         if (Convert.ToInt32(input) == 0)
@@ -550,6 +559,26 @@ while (Convert.ToInt32(input) != 0)
         Console.WriteLine("Enter 2 if you would like a different base.");
         Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
         Console.WriteLine("Enter 4 to randomly generate an operation.");
+        Console.WriteLine("Enter 5 to randomly generate three skulls.");
+        Console.WriteLine("Enter 0 to exit.");
+        input = Console.ReadLine();
+        if (Convert.ToInt32(input) == 0)
+        {
+            continue;
+        }
+    }
+    else if (Convert.ToInt32(input) == 5)
+    {
+        for (int x = 0; x < 3; x++)
+        {
+            int SKULLS = random.Next(0, 18);
+            Console.Write(SKULLSArray[SKULLS] + " ");
+        }
+        Console.WriteLine("Enter 1 for an in game mission.");
+        Console.WriteLine("Enter 2 if you would like a different base.");
+        Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
+        Console.WriteLine("Enter 4 to randomly generate an operation.");
+        Console.WriteLine("Enter 5 to randomly generate three skulls.");
         Console.WriteLine("Enter 0 to exit.");
         input = Console.ReadLine();
         if (Convert.ToInt32(input) == 0)
