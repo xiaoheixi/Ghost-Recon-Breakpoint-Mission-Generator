@@ -574,7 +574,7 @@ while (Convert.ToInt32(input) != 0)
             int SKULLS = random.Next(0, 18);
             Console.Write(SKULLSArray[SKULLS] + " ");
         }
-        Console.WriteLine("Enter 1 for an in game mission.");
+        Console.WriteLine("\nEnter 1 for an in game mission.");
         Console.WriteLine("Enter 2 if you would like a different base.");
         Console.WriteLine("Enter 3 to randomly generate AI loadouts.");
         Console.WriteLine("Enter 4 to randomly generate an operation.");
